@@ -12,3 +12,21 @@
     height: $h;
     display: inline-block;
 }
+
+@mixin position($pos, $top: 0, $left: 0, $w: 100%, $h: 100%) {
+    position: $pos;
+    top: $top;
+    left: $left;
+    width: $w;
+    height: $h;
+}
+
+@mixin positionImg($pos: absolute, $top: 0, $right: 0, $w: 0, $h: 0, $img: "") {
+    position: absolute;
+    top: $top;
+    right: $right;
+    background: url($img) no-repeat center;
+    background-size: contain;
+    width: $w;
+    height: $h;
+}
