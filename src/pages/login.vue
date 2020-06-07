@@ -89,7 +89,7 @@ export default {
           email: "bear@163.com"
         })
         .then(() => {
-          // this.$message.success("注册成功");
+          this.$message.success("注册成功");
         });
     }
   }
